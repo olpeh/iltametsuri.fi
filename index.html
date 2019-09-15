@@ -30,15 +30,14 @@
         color: #ffffff;
         font-family: 'Lato', sans-serif;
         font-size: 18px;
+        min-height: 100vh;
+        padding: 8rem 2rem;
       }
       main {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
-        padding-left: 1rem;
-        padding-right: 1rem;
       }
       article {
         display: flex;
@@ -51,8 +50,7 @@
         background-size: cover;
         box-shadow: 0rem 1.125rem 4.125rem 0rem rgba(0, 0, 0, 0.451);
         border-radius: 0.625rem;
-        padding: 2rem;
-        max-width: 62vw;
+        padding: 3rem;
       }
       h1 {
         font-size: 2.25em;
@@ -73,6 +71,7 @@
       }
       .basic-info {
         display: flex;
+        margin-bottom: 2rem;
       }
       .contact-details {
         flex: 2;
@@ -91,12 +90,20 @@
         padding: 0;
       }
       .contact-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .cutting-image {
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.451);
+      }
+      .form-wrapper {
+        padding: 4.5rem;
       }
       form {
         text-align: left;
         display: flex;
         flex-direction: column;
-        padding: 0 4rem;
       }
       label {
         margin-bottom: 0.25rem;
@@ -112,6 +119,30 @@
       button {
         height: 2rem;
         font-weight: bold;
+      }
+      @media screen and (max-width: 736px) {
+        body {
+          padding: 4rem 1rem;
+        }
+        article {
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
+        .basic-info {
+          flex-direction: column-reverse;
+          text-align: center;
+        }
+        .contact-details {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .contact-form {
+          flex-direction: column-reverse;
+          padding: 0;
+        }
+        .form-wrapper {
+          padding: 2rem;
+        }
       }
     </style>
     <link
@@ -151,20 +182,23 @@
           </div>
         </section>
         <section class="contact-form">
-          <h2>
-            Jätä yhteystietosi, niin otamme sinuun yhteyttä
-          </h2>
-          <form name="contact" method="POST" data-netlify="true">
-            <label for="name">Nimi:</label>
-            <input type="text" id="name" name="name" />
-            <label for="phone">Puhelinnumero:</label>
-            <input type="tel" id="phone" name="phone" />
-            <label for="email">Sähköposti:</label>
-            <input type="email" id="email" name="email" />
-            <label for="message">Viesti:</label>
-            <textarea id="message" name="message"></textarea>
-            <button type="submit">Lähetä</button>
-          </form>
+          <img class="cutting-image" src="images/cutting.jpg" alt="" />
+          <div class="form-wrapper">
+            <h2>
+              Jätä yhteystietosi, niin otamme sinuun yhteyttä
+            </h2>
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="name">Nimi:</label>
+              <input type="text" id="name" name="name" />
+              <label for="phone">Puhelinnumero:</label>
+              <input type="tel" id="phone" name="phone" />
+              <label for="email">Sähköposti:</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Viesti:</label>
+              <textarea id="message" name="message"></textarea>
+              <button type="submit">Lähetä</button>
+            </form>
+          </div>
         </section>
       </article>
     </main>
