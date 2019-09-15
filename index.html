@@ -65,6 +65,9 @@
       a {
         color: #ffffff;
       }
+      img {
+        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.451);
+      }
       .image {
         width: 11rem;
         border-radius: 100%;
@@ -94,9 +97,6 @@
         justify-content: space-between;
         align-items: center;
       }
-      .cutting-image {
-        box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.451);
-      }
       .form-wrapper {
         padding: 4.5rem;
       }
@@ -119,6 +119,13 @@
       button {
         height: 2rem;
         font-weight: bold;
+      }
+      .tools {
+        margin-bottom: 4rem;
+      }
+      .tools img {
+        width: 800px;
+        max-width: 100%;
       }
       @media screen and (max-width: 736px) {
         body {
@@ -185,9 +192,14 @@
             />
           </div>
         </section>
+        <section class="tools">
+          <img
+            src="images/tools.jpg"
+            alt="Chain saw and other tools by the side of a tree that has been cut down"
+          />
+        </section>
         <section class="contact-form">
           <img
-            class="cutting-image"
             src="images/cutting.jpg"
             alt="A man cutting a tree with a chain saw"
           />
