@@ -204,13 +204,15 @@
       img {
         box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.451);
       }
+      section {
+        margin-bottom: 2rem;
+      }
       .image {
         width: 11rem;
         border-radius: 100%;
       }
       .basic-info {
         display: flex;
-        margin-bottom: 2rem;
       }
       .contact-details {
         flex: 2;
@@ -262,6 +264,10 @@
       }
       .hero-image img {
         width: 800px;
+        max-width: 100%;
+      }
+      .profile-image img {
+        width: 600px;
         max-width: 100%;
       }
       @media screen and (max-width: 736px) {
@@ -383,6 +389,12 @@
               <button type="submit">Lähetä</button>
             </form>
           </div>
+        </section>
+        <section class="profile-image">
+          <img
+            src="images/profile.jpg"
+            alt="A man standing proudly in front of a tree that has been cut down."
+          />
         </section>
       </article>
     </main>
