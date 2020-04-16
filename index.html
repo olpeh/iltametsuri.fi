@@ -269,7 +269,7 @@
       input,
       textarea,
       button {
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.8rem;
         border-radius: 0.15rem;
         font-size: 1rem;
       }
@@ -406,13 +406,31 @@
             </h2>
             <form name="contact" method="POST" data-netlify="true">
               <label for="name">Nimi:</label>
-              <input type="text" id="name" name="name" />
+              <input type="text" id="name" name="name" required />
               <label for="phone">Puhelinnumero:</label>
               <input type="tel" id="phone" name="phone" />
               <label for="email">Sähköposti:</label>
               <input type="email" id="email" name="email" />
               <label for="message">Viesti:</label>
-              <textarea id="message" name="message"></textarea>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <label for="contact-method">Toivon yhteydenottoa:</label>
+              <radio-group>
+                <input
+                  type="radio"
+                  id="by-email"
+                  name="contact-method"
+                  value="by-email"
+                  checked
+                />
+                <label for="by-email">Sähköpostilla</label>
+                <input
+                  type="radio"
+                  id="by-phone"
+                  name="contact-method"
+                  value="by-phone"
+                />
+                <label for="by-phone">Puhelimitse</label>
+              </radio-group>
               <button type="submit">Lähetä</button>
             </form>
           </div>
