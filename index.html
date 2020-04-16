@@ -200,7 +200,7 @@
           0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
           0 8px 16px rgba(0, 0, 0, 0.11);
         border-radius: 0.625rem;
-        padding: 3rem;
+        padding: 1rem 2rem;
       }
       h1 {
         font-size: 2.25em;
@@ -236,6 +236,9 @@
       dt {
         font-weight: bold;
       }
+      dd:not(:last-of-type) {
+        margin-bottom: 0.6rem;
+      }
       .image {
         width: 11rem;
         border-radius: 100%;
@@ -260,7 +263,7 @@
         padding: 0;
         margin-top: 32px;
       }
-      .contact-form {
+      .side-by-side {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -313,6 +316,7 @@
       .profile-image img {
         width: 600px;
         max-width: 100%;
+        margin-left: 2rem;
       }
       @media screen and (max-width: 736px) {
         body {
@@ -336,9 +340,15 @@
           padding-left: 0;
           padding-right: 0;
         }
-        .contact-form {
+        .side-by-side {
+          flex-direction: column;
+        }
+        .reverse-on-narrow {
           flex-direction: column-reverse;
           padding: 0;
+        }
+        .profile-image img {
+          margin-left: 0;
         }
         .form-wrapper {
           padding: 2rem;
@@ -429,7 +439,7 @@
             alt="A man cutting down a tree with a smile"
           />
         </section>
-        <section class="contact-form" id="ota-yhteyttä">
+        <section class="side-by-side reverse-on-narrow" id="ota-yhteyttä">
           <img
             src="images/cutting.jpg"
             alt="A man cutting a tree with a chain saw"
@@ -469,36 +479,38 @@
             </form>
           </div>
         </section>
-        <section>
-          <h2 id="laskutustiedot">Tietoa yrityksestä</h2>
-          <dl>
-            <dt>Yrityksen nimi</dt>
-            <dd>Iltametsuri Oy</dd>
-            <dt>Yrittäjä</dt>
-            <dd>Olavi Haapala</dd>
-            <dt>Y-tunnus</dt>
-            <dd>3021668-9</dd>
-            <dt>Sähköposti</dt>
-            <dd>iltametsuri@olavihaapala.fi</dd>
-            <dt>Verkkolaskuosoite</dt>
-            <dd>003730216689</dd>
-            <dt>Välittäjätunnus</dt>
-            <dd>003723327487</dd>
-            <dt>Verkkolaskuvälittäjä</dt>
-            <dd>APIX Messaging Oy</dd>
-            <dt>Kotipaikkakunta</dt>
-            <dd>Kirkkonummi</dd>
-            <dt>Toimialue</dt>
-            <dd>Uusimaa tai sopimuksen mukaan</dd>
-            <dt>Vakuutusyhtiö</dt>
-            <dd>LähiTapiola</dd>
-          </dl>
-        </section>
-        <section class="profile-image">
-          <img
-            src="images/profile.jpg"
-            alt="A man standing proudly in front of a tree that has been cut down."
-          />
+        <section class="side-by-side">
+          <div>
+            <h2 id="laskutustiedot">Tietoa yrityksestä</h2>
+            <dl>
+              <dt>Yrityksen nimi</dt>
+              <dd>Iltametsuri Oy</dd>
+              <dt>Yrittäjä</dt>
+              <dd>Olavi Haapala</dd>
+              <dt>Y-tunnus</dt>
+              <dd>3021668-9</dd>
+              <dt>Sähköposti</dt>
+              <dd>iltametsuri@olavihaapala.fi</dd>
+              <dt>Verkkolaskuosoite</dt>
+              <dd>003730216689</dd>
+              <dt>Välittäjätunnus</dt>
+              <dd>003723327487</dd>
+              <dt>Verkkolaskuvälittäjä</dt>
+              <dd>APIX Messaging Oy</dd>
+              <dt>Kotipaikkakunta</dt>
+              <dd>Kirkkonummi</dd>
+              <dt>Toimialue</dt>
+              <dd>Uusimaa tai sopimuksen mukaan</dd>
+              <dt>Vakuutusyhtiö</dt>
+              <dd>LähiTapiola</dd>
+            </dl>
+          </div>
+          <div class="profile-image">
+            <img
+              src="images/profile.jpg"
+              alt="A man standing proudly in front of a tree that has been cut down."
+            />
+          </div>
         </section>
       </article>
     </main>
