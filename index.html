@@ -212,7 +212,8 @@
       radio-group:focus-within,
       button:focus-within,
       *:focus {
-        outline: none;
+        /* Preserve outline in WHCM, where box-shadows disappear. The transparent will be converted automatically */
+        outline: 4px solid transparent;
         box-shadow: 0px 0px 0px 4px #3d1710;
         border-bottom: none;
       }
