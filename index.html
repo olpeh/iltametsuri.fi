@@ -181,6 +181,11 @@
         padding: 8rem 2rem;
         min-height: 100vh;
       }
+      @supports (-webkit-touch-callout: inherit) {
+        body {
+          background-attachment: scroll;
+        }
+      }
       main {
         display: flex;
         flex-direction: column;
