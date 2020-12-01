@@ -234,8 +234,9 @@
         text-decoration: none;
         border-bottom: 4px solid #2a150d;
       }
-      a:hover {
+      a:not(.cta):hover {
         color: #2a150d;
+        font-weight: bold;
       }
       img {
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
@@ -253,6 +254,25 @@
       }
       .image {
         border-radius: 100%;
+      }
+      .cta-wrapper {
+        display: flex;
+        margin-bottom: 2rem;
+        margin-right: -5rem;
+      }
+      .cta {
+        padding: 1rem;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #000000;
+        outline: 4px solid transparent;
+      }
+      .cta:focus-within,
+      .cta:hover {
+        outline: 4px solid #ffffff;
+      }
+      .cta:first-of-type {
+        margin-right: 1rem;
       }
       .basic-info {
         display: flex;
@@ -342,6 +362,19 @@
           padding-left: 1rem;
           padding-right: 1rem;
         }
+        .cta-wrapper {
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          margin-right: 0;
+        }
+        .cta-wrapper .cta {
+          width: 250px;
+        }
+        .cta:first-of-type {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
         .basic-info {
           flex-direction: column-reverse;
           text-align: center;
@@ -390,6 +423,12 @@
         <section class="basic-info">
           <div class="contact-details">
             <h1>Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti</h1>
+            <div class="cta-wrapper">
+              <a class="cta" href="tel:+358409643408">
+                Soita: 040&nbsp;964&nbsp;3408
+              </a>
+              <a class="cta" href="#ota-yhteyttä">Ota yhteyttä lomakkeella</a>
+            </div>
             <p>
               Pihapuiden kaadot nopeasti ja vaivattomasti Uudenmaan alueella.
               Sovittaessa palvelua myös laajemmalla alueella – ota yhteyttä ja
@@ -413,13 +452,7 @@
               hyödyntää kotitalousvähennystä laskutettavasta työn osuudesta.
             </p>
             <h2>Ilmainen arviokäynti</h2>
-            <p>
-              Tilaa ilmainen arviokäynti vaikka samantien soittamalla numeroon
-              <a href="tel:+358409643408">040&nbsp;964&nbsp;3408</a>
-              tai
-              <a href="#ota-yhteyttä">allaolevan&nbsp;lomakkeen</a>
-              avulla.
-            </p>
+            <p>Ota yhteyttä ja tilaa ilmainen arviokäynti.</p>
 
             <h2>Yhteystiedot</h2>
             <ul>
