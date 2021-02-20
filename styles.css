@@ -238,11 +238,6 @@ dd:not(:last-of-type) {
   text-align: left;
   line-height: 2rem;
 }
-.side-by-side {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .form-wrapper {
   padding: 2rem 4rem;
   max-width: 980px;
@@ -334,13 +329,6 @@ button {
   .contact-details {
     padding-left: 0;
     padding-right: 0;
-  }
-  .side-by-side {
-    flex-direction: column;
-  }
-  .reverse-on-narrow {
-    flex-direction: column-reverse;
-    padding: 0;
   }
   .form-wrapper {
     padding: 2rem;
