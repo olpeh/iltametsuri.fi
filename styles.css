@@ -222,6 +222,7 @@ dd:not(:last-of-type) {
 }
 .basic-info {
   display: flex;
+  max-width: 980px;
 }
 .contact-details {
   flex: 2;
@@ -244,6 +245,7 @@ dd:not(:last-of-type) {
 }
 .form-wrapper {
   padding: 2rem 4rem;
+  max-width: 980px;
 }
 form {
   text-align: left;
@@ -289,7 +291,6 @@ button {
 .profile-image img {
   width: 600px;
   max-width: 100%;
-  margin-left: 2rem;
 }
 .some-links {
   display: flex;
@@ -302,7 +303,7 @@ button {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   article {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -340,9 +341,6 @@ button {
   .reverse-on-narrow {
     flex-direction: column-reverse;
     padding: 0;
-  }
-  .profile-image img {
-    margin-left: 0;
   }
   .form-wrapper {
     padding: 2rem;
