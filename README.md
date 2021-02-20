@@ -4,7 +4,7 @@
 
 Homepage for Iltametsuri Oy
 
-This page serves as a landing page for my side business company as well as an example how you can create a simple landing page as a single HTML file with inline CSS styles.
+This page serves as a landing page for my side business company as well as an example how you can create a simple landing page as HTML files with a small amount of CSS styles.
 Such a page can achieve high performance as long as the HTML file size remains small enough.
 
 ## Development

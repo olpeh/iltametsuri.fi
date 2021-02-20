@@ -92,10 +92,12 @@
     <nav>
       <ul>
         <li>
-          <a class="nav-link" href="/" aria-current="page">Etusivu</a>
+          <a class="nav-link" href="/">Etusivu</a>
         </li>
         <li>
-          <a class="nav-link" href="/ota-yhteytta.html">Ota yhteyttä</a>
+          <a class="nav-link" href="/ota-yhteytta.html" aria-current="page"
+            >Ota yhteyttä</a
+          >
         </li>
         <li>
           <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
@@ -104,68 +106,50 @@
     </nav>
     <main>
       <article>
-        <h1>Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti</h1>
-        <section class="basic-info">
-          <div class="contact-details">
-            <div class="cta-wrapper">
-              <a class="cta" href="tel:+358409643408">
-                Soita: 040&nbsp;964&nbsp;3408
-              </a>
-              <a class="cta" href="/ota-yhteytta.html"
-                >Ota yhteyttä lomakkeella</a
-              >
-            </div>
-            <p>
-              Pihapuiden kaadot nopeasti ja vaivattomasti Uudenmaan alueella.
-              Sovittaessa palvelua myös laajemmalla alueella – ota yhteyttä ja
-              pyydä tarjous!
-            </p>
-            <p>
-              Suoritamme puunkaatoa vuosien kokemuksen tuomalla varmuudella,
-              joten myös ongelmapuiden ja suurten puiden kaataminen onnistuu.
-              Ahtaissa paikoissa tai rakennusten lähellä olevian puiden
-              kaataminen onnistuu kiipeilemällä tai nostokorin avulla. Myös
-              isommat projektit ovat mahdollisia yhteistyössä muiden yritysten
-              kanssa.
-            </p>
-            <p>
-              Tarvittaessa myös puiden ja risujen poiskuljettaminen onnistuu, ja
-              halutessanne pilkomme puut klapeiksi asti.
-            </p>
-            <p>
-              Yrityksellä on voimassa olevat vastuu- ja tapaturmavakuutukset.
-              Iltametsuri Oy kuuluu ennakkoperintärekisteriin, joten voit
-              hyödyntää kotitalousvähennystä laskutettavasta työn osuudesta.
-            </p>
-
-            <h2><a href="yhteystiedot.html">Yhteystiedot</a></h2>
-            <ul>
-              <li>
-                Puhelin: <a href="tel:+358409643408">040&nbsp;964&nbsp;3408</a>
-              </li>
-              <li>
-                Sähköposti:
-                <a href="mailto:iltametsuri@olavihaapala.fi"
-                  >iltametsuri@olavihaapala.fi</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="contact-image">
-            <img
-              class="image"
-              src="images/olavi.jpg"
-              width="200"
-              height="200"
-              alt="Olavi's profile picture"
-            />
-          </div>
-        </section>
-        <section class="hero-image">
+        <h1>Ota yhteyttä – Iltametsuri Oy</h1>
+        <section class="side-by-side reverse-on-narrow" id="ota-yhteyttä">
           <img
-            src="images/hero-image.jpg"
-            alt="A man cutting down a tree with a smile"
+            src="images/cutting.jpg"
+            alt="A man cutting a tree with a chain saw"
           />
+          <div class="form-wrapper">
+            <h2>Jätäthän yhteystietosi. Otan pian yhteyttä.</h2>
+            <form name="contact" method="POST" data-netlify="true">
+              <label for="name">Nimi:</label>
+              <input type="text" id="name" name="name" />
+              <label for="phone">Puhelinnumero:</label>
+              <input type="tel" id="phone" name="phone" />
+              <label for="email">Sähköposti:</label>
+              <input type="email" id="email" name="email" />
+              <label for="message">Viesti:</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <label for="contact-method">Toivon yhteydenottoa:</label>
+              <radio-group>
+                <input
+                  type="radio"
+                  id="by-email"
+                  name="contact-method"
+                  value="by-email"
+                  checked
+                />
+                <label for="by-email">Sähköpostilla</label>
+                <input
+                  type="radio"
+                  id="by-phone"
+                  name="contact-method"
+                  value="by-phone"
+                />
+                <label for="by-phone">Puhelimitse</label>
+              </radio-group>
+              <button type="submit">Lähetä</button>
+            </form>
+            <h2>Ilmainen arviokäynti</h2>
+            <p>
+              Usein puunkaadon haastavuuden arvioiminen on lähes mahdotonta
+              pelkän valokuvan perusteella. Ota siis yhteyttä ja tilaa ilmainen
+              arviokäynti.
+            </p>
+          </div>
         </section>
         <section>
           <h2>Seuraa Iltametsuria sosiaalisessa mediassa</h2>
