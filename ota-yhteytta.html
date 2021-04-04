@@ -110,38 +110,30 @@
         <section id="ota-yhteyttä">
           <div class="form-wrapper">
             <h2>Jätäthän yhteystietosi. Otan pian yhteyttä.</h2>
+            <p>Tähdellä merkatut, nimi ja viesti ovat pakollisia kenttiä.</p>
             <form
               name="contact"
               method="POST"
               data-netlify="true"
               action="/kiitos.html"
             >
-              <label for="name">Nimi*:</label>
+              <label for="name">Nimi: *</label>
               <input type="text" required id="name" name="name" />
               <label for="phone">Puhelinnumero:</label>
               <input type="tel" id="phone" name="phone" />
               <label for="email">Sähköposti:</label>
               <input type="email" id="email" name="email" />
-              <label for="message">Viesti:</label>
-              <textarea id="message" name="message" rows="4"></textarea>
-              <label for="contact-method">Toivon yhteydenottoa:</label>
-              <radio-group>
-                <input
-                  type="radio"
-                  id="by-email"
-                  name="contact-method"
-                  value="by-email"
-                  checked
-                />
-                <label for="by-email">Sähköpostilla</label>
-                <input
-                  type="radio"
-                  id="by-phone"
-                  name="contact-method"
-                  value="by-phone"
-                />
-                <label for="by-phone">Puhelimitse</label>
-              </radio-group>
+              <label for="address">Kohteen osoite:</label>
+              <input type="text" id="address" name="address" />
+              <label for="message"
+                >Työn kuvaus tai vapaamuotoinen viesti: *</label
+              >
+              <textarea
+                required
+                id="message"
+                name="message"
+                rows="4"
+              ></textarea>
               <label for="file-input"
                 >Liitetiedosto (yleiset formaatit kuten JPEG ja PNG tuettuja,
                 lisäksi PDF):
@@ -153,14 +145,13 @@
                 accept="image/*,.pdf"
                 multiple
               />
-
               <button type="submit">Lähetä</button>
             </form>
             <h2>Ilmainen arviokäynti</h2>
             <p>
               Usein puunkaadon haastavuuden arvioiminen on lähes mahdotonta
-              pelkän valokuvan perusteella. Ota siis yhteyttä ja tilaa ilmainen
-              arviokäynti.
+              pelkän valokuvan perusteella. Ota siis yhteyttä ylläolevan
+              lomakkeen avulla ja tilaa ilmainen arviokäynti.
             </p>
           </div>
         </section>
