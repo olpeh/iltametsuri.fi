@@ -115,6 +115,7 @@
               name="contact"
               method="POST"
               data-netlify="true"
+              enctype="multipart/form-data"
               action="/kiitos.html"
             >
               <label for="name">Nimi: *</label>
@@ -138,7 +139,12 @@
                 >Liitetiedosto (yleiset formaatit kuten JPEG ja PNG tuettuja,
                 lisäksi PDF):
               </label>
-              <input type="file" id="file-input" accept="image/*,.pdf" />
+              <input
+                name="file"
+                type="file"
+                id="file-input"
+                accept="image/*,.pdf"
+              />
               <button type="submit">Lähetä</button>
             </form>
             <h2>Ilmainen arviokäynti</h2>
