@@ -49,7 +49,7 @@
     <meta name="theme-color" content="#eb816a" />
     <meta
       name="description"
-      content="Puunkaatoa nopeasti ja vaivattomasti Uudenmaan ja Päijät-Hämeen alueella – ota yhteyttä!"
+      content="Iltametsuri Oy:n yhteystiedot. Puunkaatoa Uudenmaan ja Päijät-Hämeen alueella. Puhelin: 0409643408, sähköposti: iltametsuri@olavihaapala.fi"
     />
     <meta property="og:site_name" content="Iltametsuri Oy" />
     <meta property="og:title" content="Yhteystiedot – Iltametsuri Oy" />
@@ -70,9 +70,41 @@
       name="keywords"
       content="Iltametsuri Oy, metsuri, Kirkkonummi, Espoo, Vantaa, Helsinki, puunkaato, puunkaatopalvelu, puiden kaato, pihapuiden kaato, iltametsuri, puun kaataminen, puun kaataminen omalta tontilta, puiden kaataminen, ongelmapuiden kaato, ongelmapuiden kaataminen, myrskytuhojen raivaus, puiden kaato kaupungin tontilta, puiden kaato tontin rajalta, puiden kaato mökkitontilta, puunkaato hinta, kiipeilykaato"
     />
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://iltametsuri.fi/yhteystiedot.html" />
+    <!-- Structured Data Markup for Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Iltametsuri Oy",
+        "image": "https://iltametsuri.fi/images/hero-image.jpg",
+        "url": "https://iltametsuri.fi",
+        "telephone": "+358409643408",
+        "email": "iltametsuri@olavihaapala.fi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kirkkonummi",
+          "addressRegion": "Uusimaa",
+          "addressCountry": "FI"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 60.1234,
+          "longitude": 24.5678
+        },
+        "priceRange": "$$",
+        "sameAs": [
+          "https://www.instagram.com/iltametsuri/",
+          "https://www.facebook.com/Iltametsuri-Oy-106530164137316/",
+          "https://www.linkedin.com/company/iltametsuri-oy/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <nav>
+    <a href="#main-content" class="skip-link">Siirry sisältöön</a>
+    <nav aria-label="Päävalikko">
       <ul>
         <li class="hide-in-mobile">
           <a class="nav-link" href="/">Etusivu</a>
@@ -92,12 +124,12 @@
         </li>
       </ul>
     </nav>
-    <main>
+    <main id="main-content">
       <article>
         <h1>Yhteystiedot – Iltametsuri Oy</h1>
         <section class="basic-info">
           <div class="contact-details">
-            <ul>
+            <ul aria-label="Yhteystiedot">
               <li>
                 Puhelin: <a href="tel:+358409643408">040&nbsp;964&nbsp;3408</a>
               </li>
@@ -113,7 +145,7 @@
         <section>
           <div>
             <h2 id="laskutustiedot">Tietoa yrityksestä</h2>
-            <dl>
+            <dl aria-labelledby="laskutustiedot">
               <dt>Yrityksen nimi</dt>
               <dd>Iltametsuri Oy</dd>
               <dt>Perustettu</dt>
@@ -146,7 +178,9 @@
           <div class="profile-image">
             <img
               src="images/profile.jpg"
-              alt="A man standing proudly in front of a tree that has been cut down."
+              alt="Metsuri seisomassa ylpeänä kaadetun puun edessä"
+              width="600"
+              height="400"
             />
           </div>
         </section>
