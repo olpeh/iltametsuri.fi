@@ -239,6 +239,10 @@ dd:not(:last-of-type) {
   text-align: left;
   line-height: 2rem;
 }
+.gw-smartform {
+  width: 100%;
+  min-height: 100vh;
+}
 .form-wrapper {
   padding: 2rem 4rem;
   max-width: 980px;
