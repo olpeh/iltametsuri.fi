@@ -334,12 +334,6 @@ textarea:focus {
   }
 }
 @media screen and (max-width: 900px) {
-  .contact-details ul {
-    display: flex;
-    flex-direction: column;
-    line-height: 2rem;
-  }
-
   main {
     padding-top: 6rem;
   }
