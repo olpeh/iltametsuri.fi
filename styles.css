@@ -251,9 +251,9 @@ dd:not(:last-of-type) {
   padding-top: 4rem;
 }
 .gw-smartflow {
-  width: calc(100% + 2rem);
-  margin-left: -1rem;
-  margin-right: -1rem;
+  width: calc(100% + 6rem);
+  margin-left: -3rem;
+  margin-right: -3rem;
   margin-top: 2rem;
 }
 label {
@@ -302,6 +302,11 @@ textarea:focus {
   article {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .gw-smartflow {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
   .cta-wrapper {
     flex-direction: column;
@@ -386,6 +391,11 @@ textarea:focus {
     box-sizing: border-box;
     border-radius: 0.5rem;
   }
+  .gw-smartflow {
+    width: calc(100% + 2rem);
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
 
   input,
   textarea,
@@ -457,6 +467,11 @@ textarea:focus {
   article {
     padding: 0.8rem;
   }
+  .gw-smartflow {
+    width: calc(100% + 1.6rem);
+    margin-left: -0.8rem;
+    margin-right: -0.8rem;
+  }
 
   .form-wrapper {
     padding: 0.8rem;
@@ -487,6 +502,11 @@ textarea:focus {
   article {
     padding: 0.6rem;
     border-radius: 0.4rem;
+  }
+  .gw-smartflow {
+    width: calc(100% + 1.2rem);
+    margin-left: -0.6rem;
+    margin-right: -0.6rem;
   }
 
   h1 {
