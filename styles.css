@@ -395,10 +395,12 @@ textarea:focus {
     box-sizing: border-box;
     border-radius: 0.5rem;
   }
+
   .gw-smartflow {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-right: -1rem;
+    width: 100% !important;
+    max-width: 410px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 
   input,
