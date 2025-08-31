@@ -105,33 +105,37 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Siirry sisältöön</a>
-    <nav aria-label="Päävalikko">
-      <ul>
-        <li>
-          <a class="nav-link" href="/" aria-current="page">Etusivu</a>
-        </li>
-        <li>
-          <a class="nav-link" href="/ota-yhteytta.html">Ota yhteyttä</a>
-        </li>
-        <li>
-          <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
-        </li>
-        <li class="hide-in-mobile">
-          <a class="nav-link" href="https://holvi.com/shop/iltametsuri/"
-            >Kauppa</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav aria-label="Päävalikko">
+          <ul>
+            <li>
+              <a class="nav-link" href="/" aria-current="page">Etusivu</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/ota-yhteytta.html">Ota yhteyttä</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
+            </li>
+            <li class="hide-in-mobile">
+              <a class="nav-link" href="https://holvi.com/shop/iltametsuri/"
+                >Kauppa</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main id="main-content">
       <article>
-        <h1>Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti</h1>
-        <section class="basic-info">
-          <div class="contact-details">
+        <section class="hero">
+          <div class="container hero-copy">
+            <h1>Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti</h1>
             <div class="cta-wrapper">
-              <a class="cta" href="tel:+358409643408">
-                Soita: 040&nbsp;964&nbsp;3408
-              </a>
+              <a class="cta" href="tel:+358409643408"
+                >Soita: 040&nbsp;964&nbsp;3408</a
+              >
               <a class="cta" href="/ota-yhteytta.html"
                 >Ota yhteyttä lomakkeella</a
               >
@@ -157,78 +161,127 @@
               Yrityksellä on voimassa olevat vastuu- ja tapaturmavakuutukset.
               Iltametsuri Oy kuuluu ennakkoperintärekisteriin, joten voit
               hyödyntää kotitalousvähennystä laskutettavasta työn osuudesta.
-            </p>
-            <p>
               Iltametsuri Oy toimii laajamittaisesti koko Etelä-Suomen alueella.
             </p>
-            <div>
-              <!-- Groweo Smart Flow -->
-              <div class="gw-smartflow" id="gw-smartflow">
-                <script
-                  src="https://engine3.groweo.com/smartFlow/script.js"
-                  data-cookieconsent="ignore"
-                ></script>
-                <iframe
-                  id="67d7ce0f759498c99686d528-6762b8189623c2dce23b497b-smartflow-inpage"
-                  src="https://engine3.groweo.com/smartFlow/?url=https://engine3.groweo.com/api/6762b8189623c2dce23b497b/67d7ce0f759498c99686d528&publishUrl=https://engine3.groweo.com/api/session/response&workspaceId=6762b8189623c2dce23b497b&moduleId=67d7ce0f759498c99686d528&inPage=true&isPreview=false&language=fi"
-                  height="100%"
-                  width="100%"
-                  frameborder="0"
-                  scrolling="auto"
-                  title="Iltametsuri Oy:n yhteydenottolomake"
-                >
-                </iframe>
-              </div>
-              <!-- End of Smart Flow  -->
-            </div>
-            <section>
-              <br />
-              <h2>Verkkokkauppa</h2>
-              <p>
-                Tilaa Iltametsurin verkkokaupasta laadukkaat polttopuut ensi
-                talveksi! Polttopuuta on saatavilla rajoitetusti, joten
-                kannattaa olla nopea. Verkkokaupan valikoimasta löydät myös
-                ainutlaatuista tunnelmaa luovia jätkänkynttilöitä aidosta Lapin
-                kelohongasta.
-              </p>
-              <br />
-              <a class="cta" href="https://holvi.com/shop/iltametsuri/"
-                >Siirry verkkokauppaan tästä</a
-              >
-              <br />
-            </section>
+          </div>
+          <figure class="hero-media hero-image" aria-hidden="true"></figure>
+        </section>
 
-            <h2><a href="yhteystiedot.html">Yhteystiedot</a></h2>
-            <div class="contact-wrapper">
-              <ul>
-                <li>
-                  Puhelin:
-                  <a href="tel:+358409643408">040&nbsp;964&nbsp;3408</a>
-                </li>
-                <li>
-                  Sähköposti:
-                  <a href="mailto:iltametsuri@olavihaapala.fi"
-                    >iltametsuri@olavihaapala.fi</a
-                  >
-                </li>
-              </ul>
-              <img
-                class="image"
-                src="images/olavi.jpg"
-                width="200"
-                height="200"
-                alt="Olavi Haapala, Iltametsuri Oy:n toimitusjohtaja"
-              />
-            </div>
+        <nav class="container quick-nav" aria-label="Pikavalinnat">
+          <a class="item" href="#meista">
+            <div class="num">01</div>
+            <div class="label">ILTAMETSURI</div>
+          </a>
+          <a class="item" href="/ota-yhteytta.html">
+            <div class="num">02</div>
+            <div class="label">YHTEYS</div>
+          </a>
+        </nav>
+
+        <section class="container" aria-label="Johdanto">
+          <p class="lede">
+            <span class="lede-strong">Iltametsuri</span> tarjoaa täyden palvelun
+            puunkaatopalvelua Uudenmaan sekä Päijät-Hämeen alueella. Sovittaessa
+            palvelua myös laajemmalla alueella.
+          </p>
+          <p class="lede">Ota yhteyttä ja pyydä tarjous!</p>
+          <p class="center mt-1">
+            <a class="btn-secondary" href="#palvelut">Tutustu tarkemmin</a>
+          </p>
+        </section>
+
+        <section id="meista" class="container">
+          <!-- Groweo Smart Flow -->
+          <div class="gw-smartflow" id="gw-smartflow">
+            <script
+              src="https://engine3.groweo.com/smartFlow/script.js"
+              data-cookieconsent="ignore"
+            ></script>
+            <iframe
+              id="67d7ce0f759498c99686d528-6762b8189623c2dce23b497b-smartflow-inpage"
+              src="https://engine3.groweo.com/smartFlow/?url=https://engine3.groweo.com/api/6762b8189623c2dce23b497b/67d7ce0f759498c99686d528&publishUrl=https://engine3.groweo.com/api/session/response&workspaceId=6762b8189623c2dce23b497b&moduleId=67d7ce0f759498c99686d528&inPage=true&isPreview=false&language=fi"
+              height="100%"
+              width="100%"
+              frameborder="0"
+              scrolling="auto"
+              title="Iltametsuri Oy:n yhteydenottolomake"
+            >
+            </iframe>
+          </div>
+          <!-- End of Smart Flow  -->
+        </section>
+
+        <section
+          class="container services-card"
+          aria-labelledby="palvelut"
+          id="palvelut"
+        >
+          <figure>
+            <img
+              src="images/cutting.jpg"
+              alt="Moottorisaha katkaisemassa puun runkoa"
+            />
+          </figure>
+          <div>
+            <h2 id="palvelut">Palvelut</h2>
+            <p>
+              Suoritamme puunkaatoa vuosien kokemuksen tuomalla varmuudella,
+              joten myös ongelmapuiden ja suurten puiden kaataminen onnistuu.
+              Ahtaissa paikoissa tai rakennusten lähellä olevien puiden
+              kaataminen onnistuu kiipeillen tai nostokorin avulla. Myös isommat
+              projektit ovat mahdollisia laajan yhteistyöverkoston avulla.
+            </p>
+            <p>
+              Tarvittaessa myös puiden ja risujen poiskuljettaminen onnistuu, ja
+              halutessanne pilkomme puut klapeiksi asti ja hoidamme kantojen
+              jyrsinnän. Yrityksellä on voimassa olevat vastuu- ja
+              tapaturmavakuutukset. Iltametsuri Oy kuuluu
+              ennakkoperintärekisteriin, joten voit hyödyntää
+              kotitalousvähennystä laskutettavasta työn osuudesta.
+            </p>
+            <a class="btn-inline" href="tel:+358409643408"
+              >Soita ja kysy lisää</a
+            >
           </div>
         </section>
-        <section class="hero-image">
-          <img
-            src="images/hero-image.jpg"
-            alt="Metsuri kaatamassa puuta turvallisesti"
-          />
+
+        <section class="container">
+          <h2>Verkkokkauppa</h2>
+          <p>
+            Tilaa Iltametsurin verkkokaupasta laadukkaat polttopuut ensi
+            talveksi! Polttopuuta on saatavilla rajoitetusti, joten kannattaa
+            olla nopea. Verkkokaupan valikoimasta löydät myös ainutlaatuista
+            tunnelmaa luovia jätkänkynttilöitä aidosta Lapin kelohongasta.
+          </p>
+          <a class="cta" href="https://holvi.com/shop/iltametsuri/"
+            >Siirry verkkokauppaan tästä</a
+          >
         </section>
-        <section>
+
+        <section class="container">
+          <h2><a href="yhteystiedot.html">Yhteystiedot</a></h2>
+          <div class="contact-wrapper">
+            <ul>
+              <li>
+                Puhelin: <a href="tel:+358409643408">040&nbsp;964&nbsp;3408</a>
+              </li>
+              <li>
+                Sähköposti:
+                <a href="mailto:iltametsuri@olavihaapala.fi"
+                  >iltametsuri@olavihaapala.fi</a
+                >
+              </li>
+            </ul>
+            <img
+              class="image"
+              src="images/olavi.jpg"
+              width="200"
+              height="200"
+              alt="Olavi Haapala, Iltametsuri Oy:n toimitusjohtaja"
+            />
+          </div>
+        </section>
+        <section class="container">
           <h2>Seuraa Iltametsuria sosiaalisessa mediassa</h2>
           <p>Katso kuvia ja videoita aikaisemmilta keikoilta.</p>
           <ul class="some-links">
@@ -283,7 +336,7 @@
             </li>
           </ul>
         </section>
-        <section>
+        <section class="container">
           <h2>Arvostele Iltametsuri Oy</h2>
           <p>
             Iltametsuri Oy haluaisi saada sinulta palautetta:
@@ -295,7 +348,7 @@
             >
           </p>
         </section>
-        <section>
+        <section class="container">
           <h2>Iltametsuri Oy:n toimialue</h2>
           <p>
             Uusimaa: Espoo, Helsinki, Vantaa, Porvoo, Sipoo, Kirkkonummi,
@@ -305,6 +358,29 @@
           <p>Koko Etelä-Suomi ja tarvittaessa laajemmallakin alueella.</p>
         </section>
       </article>
+      <footer class="site-footer" role="contentinfo">
+        <div class="container footer-grid">
+          <div class="footer-logo">
+            <strong>ILTAMETSURI</strong>
+          </div>
+          <div>
+            <p>Puunkaatoa turvallisesti ja luotettavasti.</p>
+            <p>
+              <a class="phone-highlight" href="tel:+358409643408"
+                >Puh 040 964 3408</a
+              >
+            </p>
+          </div>
+          <div>
+            <h3>Toimialueemme</h3>
+            <p>
+              Uusimaa: Espoo, Helsinki, Vantaa, Porvoo, Sipoo, Kirkkonummi,
+              Siuntio, Lohja, Vihti, Inkoo, Karjaa. Päijät-Häme: Lahti, Hollola.
+              Koko Etelä-Suomi ja tarvittaessa laajemmallakin alueella.
+            </p>
+          </div>
+        </div>
+      </footer>
       <!-- Groweo Smart Form -->
       <div class="gw-smartform">
         <script
@@ -373,5 +449,9 @@
       data-cookieconsent="ignore"
     ></script>
     <!-- End of Groweo App -->
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>

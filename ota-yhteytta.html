@@ -107,26 +107,30 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Siirry sisältöön</a>
-    <nav aria-label="Päävalikko">
-      <ul>
-        <li>
-          <a class="nav-link" href="/">Etusivu</a>
-        </li>
-        <li>
-          <a class="nav-link" href="/ota-yhteytta.html" aria-current="page"
-            >Ota yhteyttä</a
-          >
-        </li>
-        <li>
-          <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
-        </li>
-        <li class="hide-in-mobile">
-          <a class="nav-link" href="https://holvi.com/shop/iltametsuri/"
-            >Kauppa</a
-          >
-        </li>
-      </ul>
-    </nav>
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav aria-label="Päävalikko">
+          <ul>
+            <li>
+              <a class="nav-link" href="/">Etusivu</a>
+            </li>
+            <li>
+              <a class="nav-link" href="/ota-yhteytta.html" aria-current="page"
+                >Ota yhteyttä</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
+            </li>
+            <li class="hide-in-mobile">
+              <a class="nav-link" href="https://holvi.com/shop/iltametsuri/"
+                >Kauppa</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main id="main-content" class="no-padding">
       <!-- Groweo Smart Form -->
       <div class="gw-smartform no-padding">
@@ -147,6 +151,16 @@
       </div>
       <!-- End of Groweo Smart Form -->
     </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p>&copy; <span id="year">2025</span> Iltametsuri Oy</p>
+        <p>
+          <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
+          &middot;
+          <a class="nav-link" href="/ota-yhteytta.html">Ota yhteyttä</a>
+        </p>
+      </div>
+    </footer>
     <script src="quicklink.js" defer></script>
     <script>
       window.addEventListener("load", () => {
@@ -196,5 +210,9 @@
       data-cookieconsent="ignore"
     ></script>
     <!-- End of Groweo App -->
+    <script>
+      const y = document.getElementById("year");
+      if (y) y.textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
