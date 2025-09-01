@@ -15,6 +15,12 @@ Since this repository is a simple HTML page, you can use the following command:
 python -m SimpleHTTPServer
 ```
 
+or
+
+```bash
+http-server -p 8000
+```
+
 for serving the `index.html` file in port 8000.
 
 ## Deployments
