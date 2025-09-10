@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="fi">
   <head>
-    <title>Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti</title>
+    <title>Ota yhteyttä – Iltametsuri Oy</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+
+    <!-- Preload critical fonts -->
+    <link
+      rel="preload"
+      href="assets/fonts/futura-book.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/futura-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/futura-extra-black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="assets/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/apple-icon-72x72.png"
+    />
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
     <link
       rel="apple-touch-icon"
@@ -49,13 +85,10 @@
     <meta name="theme-color" content="#eb816a" />
     <meta
       name="description"
-      content="Ota yhteyttä Iltametsuri Oy:hyn puunkaatoa varten. Palvelemme Uudenmaan ja Päijät-Hämeen alueella. Ilmainen arviokäynti!"
+      content="Iltametsuri Oy:n yhteystiedot. Puunkaatoa Uudenmaan ja Päijät-Hämeen alueella. Puhelin: 0409643408, sähköposti: iltametsuri@olavihaapala.fi"
     />
     <meta property="og:site_name" content="Iltametsuri Oy" />
-    <meta
-      property="og:title"
-      content="Iltametsuri Oy – Puunkaatoa turvallisesti ja luotettavasti"
-    />
+    <meta property="og:title" content="Yhteystiedot – Iltametsuri Oy" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
@@ -74,7 +107,7 @@
       content="Iltametsuri Oy, metsuri, Kirkkonummi, Espoo, Vantaa, Helsinki, puunkaato, puunkaatopalvelu, puiden kaato, pihapuiden kaato, iltametsuri, puun kaataminen, puun kaataminen omalta tontilta, puiden kaataminen, ongelmapuiden kaato, ongelmapuiden kaataminen, myrskytuhojen raivaus, puiden kaato kaupungin tontilta, puiden kaato tontin rajalta, puiden kaato mökkitontilta, puunkaato hinta, kiipeilykaato"
     />
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://iltametsuri.fi/ota-yhteytta.html" />
+    <link rel="canonical" href="https://iltametsuri.fi/yhteystiedot.html" />
     <!-- Structured Data Markup for Local Business -->
     <script type="application/ld+json">
       {
@@ -105,48 +138,352 @@
       }
     </script>
   </head>
-  <body>
-    <a href="#main-content" class="skip-link">Siirry sisältöön</a>
-    <nav aria-label="Päävalikko">
-      <ul>
-        <li>
-          <a class="nav-link" href="/">Etusivu</a>
-        </li>
-        <li>
-          <a class="nav-link" href="/ota-yhteytta.html" aria-current="page"
-            >Ota yhteyttä</a
+  <body class="contact">
+    <header class="header">
+      <div class="header-container container">
+        <div class="site-logo"></div>
+        <ul class="some-list desktop-only">
+          <li class="some-item">
+            <a
+              href="https://www.facebook.com/Iltametsuri-Oy-106530164137316/"
+              class="some-link"
+              aria-label="Facebook"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-facebook.svg"
+                alt="Facebook"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="some-item">
+            <a
+              href="https://www.instagram.com/iltametsuri/"
+              class="some-link"
+              aria-label="Instagram"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-instagram.svg"
+                alt="Instagram"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="some-item">
+            <a
+              href="https://www.youtube.com/channel/UCl21OA_CVPP6-u5hBx90gNQ"
+              class="some-link"
+              aria-label="YouTube"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-youtube.svg"
+                alt="YouTube"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="some-item">
+            <a
+              href="https://x.com/iltametsuri"
+              class="some-link"
+              aria-label="X (Twitter)"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-twitter.svg"
+                alt="X (Twitter)"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="some-item">
+            <a
+              href="https://www.google.fi/maps/uv?pb=!1s0x468d8de538f7c7e5%3A0xedd989b792fcf807!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM5-evobqnsd7-dSAZdVLWO2yy7kuJpuWc8tQS3%3Dw240-h160-k-no!5siltametsuri%20-%20Google%20Search!15sCgIgARICGAI&imagekey=!1e10!2sAF1QipPRhMXkQ7kvYrQ3wZZAspzw_ewqejV1Dg6CeYr7&hl=en&sa=X&ved=2ahUKEwjjt4-Wj63tAhWtk4sKHW9QBdIQoiowCnoECBYQAw"
+              class="some-link"
+              aria-label="Google"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-google.svg"
+                alt="Google"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+          <li class="some-item">
+            <a
+              href="https://www.linkedin.com/company/iltametsuri-oy/"
+              class="some-link"
+              aria-label="LinkedIn"
+              target="_blank"
+            >
+              <img
+                src="assets/images/icon-linkedin.svg"
+                alt="LinkedIn"
+                width="28"
+                height="28"
+              />
+            </a>
+          </li>
+        </ul>
+        <nav class="site-nav" role="navigation" aria-label="Päävalikko">
+          <button
+            class="menu-toggle"
+            aria-label="Avaa tai sulje valikko"
+            aria-expanded="false"
+            aria-controls="primary-menu"
           >
-        </li>
-        <li>
-          <a class="nav-link" href="/yhteystiedot.html">Yhteystiedot</a>
-        </li>
-        <li class="hide-in-mobile">
-          <a class="nav-link" href="https://holvi.com/shop/iltametsuri/"
-            >Kauppa</a
-          >
-        </li>
-      </ul>
-    </nav>
-    <main id="main-content" class="no-padding">
-      <!-- Groweo Smart Form -->
-      <div class="gw-smartform no-padding">
-        <script
-          src="https://engine3.groweo.com/smartBlock/script.js"
-          data-cookieconsent="ignore"
-        ></script>
-        <iframe
-          id="67d7d291fd30e462168f9535-6762b8189623c2dce23b497b-inpage"
-          src="https://engine3.groweo.com/smartBlock/?url=https://engine3.groweo.com/api/6762b8189623c2dce23b497b/67d7d291fd30e462168f9535&publishUrl=https://engine3.groweo.com/api/session/response&workspaceId=6762b8189623c2dce23b497b&moduleId=67d7d291fd30e462168f9535&inPage=true&isPreview=false&language=fi"
-          height="100%"
-          width="100%"
-          frameborder="0"
-          scrolling="auto"
-          title="Iltametsuri Oy:n yhteydenottolomake"
-        >
-        </iframe>
+            <span class="menu-toggle-inner" aria-hidden="true"></span>
+          </button>
+          <div class="menu" id="primary-menu" aria-expanded="false">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a href="index.html" class="menu-link">Etusivu</a>
+              </li>
+              <li class="menu-item">
+                <a href="iltametsuri.html" class="menu-link">Iltametsuri</a>
+              </li>
+              <li class="menu-item">
+                <a href="yhteystiedot.html" class="menu-link is-current"
+                  >Yhteystiedot</a
+                >
+              </li>
+              <li class="menu-item">
+                <a
+                  href="https://holvi.com/shop/iltametsuri/"
+                  class="menu-link external-link"
+                  target="_blank"
+                  rel="noopener nofollow"
+                  >Verkkokauppa</a
+                >
+              </li>
+            </ul>
+            <ul class="some-list">
+              <li class="some-item">
+                <a
+                  href="https://www.facebook.com/Iltametsuri-Oy-106530164137316/"
+                  class="some-link"
+                  aria-label="Facebook"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-facebook.svg"
+                    alt="Facebook"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+              <li class="some-item">
+                <a
+                  href="https://www.instagram.com/iltametsuri/"
+                  class="some-link"
+                  aria-label="Instagram"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-instagram.svg"
+                    alt="Instagram"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+              <li class="some-item">
+                <a
+                  href="https://www.youtube.com/channel/UCl21OA_CVPP6-u5hBx90gNQ"
+                  class="some-link"
+                  aria-label="YouTube"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-youtube.svg"
+                    alt="YouTube"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+              <li class="some-item">
+                <a
+                  href="https://x.com/iltametsuri"
+                  class="some-link"
+                  aria-label="X (Twitter)"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-twitter.svg"
+                    alt="X (Twitter)"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+              <li class="some-item">
+                <a
+                  href="https://www.google.fi/maps/uv?pb=!1s0x468d8de538f7c7e5%3A0xedd989b792fcf807!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM5-evobqnsd7-dSAZdVLWO2yy7kuJpuWc8tQS3%3Dw240-h160-k-no!5siltametsuri%20-%20Google%20Search!15sCgIgARICGAI&imagekey=!1e10!2sAF1QipPRhMXkQ7kvYrQ3wZZAspzw_ewqejV1Dg6CeYr7&hl=en&sa=X&ved=2ahUKEwjjt4-Wj63tAhWtk4sKHW9QBdIQoiowCnoECBYQAw"
+                  class="some-link"
+                  aria-label="Google"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-google.svg"
+                    alt="Google"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+              <li class="some-item">
+                <a
+                  href="https://www.linkedin.com/company/iltametsuri-oy/"
+                  class="some-link"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/images/icon-linkedin.svg"
+                    alt="LinkedIn"
+                    width="28"
+                    height="28"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <!-- End of Groweo Smart Form -->
+    </header>
+    <main>
+      <section class="info container">
+        <div class="info-text">
+          <h1>
+            <span class="number" aria-hidden="true">03</span>
+            Ota yhteyttä
+          </h1>
+          <p>
+            Täytä alla oleva lomake ja lähetä Iltametsurille tarjouspyyntö.
+            Arviokäynnit ovat aina ilmaisia.
+          </p>
+        </div>
+      </section>
+      <section class="form container">
+        <!-- Groweo Smart Form -->
+        <div class="gw-smartform">
+          <script
+            src="https://engine3.groweo.com/smartBlock/script.js"
+            data-cookieconsent="ignore"
+          ></script>
+          <iframe
+            id="67d7d291fd30e462168f9535-6762b8189623c2dce23b497b-inpage"
+            src="https://engine3.groweo.com/smartBlock/?url=https://engine3.groweo.com/api/6762b8189623c2dce23b497b/67d7d291fd30e462168f9535&publishUrl=https://engine3.groweo.com/api/session/response&workspaceId=6762b8189623c2dce23b497b&moduleId=67d7d291fd30e462168f9535&inPage=true&isPreview=false&language=fi"
+            height="100%"
+            width="100%"
+            frameborder="0"
+            scrolling="auto"
+            title="Iltametsuri Oy:n yhteydenottolomake"
+          >
+          </iframe>
+        </div>
+        <!-- End of Groweo Smart Form -->
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-logo footer-left footer-col">
+          <div class="site-logo"></div>
+        </div>
+        <div class="footer-contact footer-right footer-col">
+          <h2 class="footer-heading-large">
+            Puunkaatoa turvallisesti ja luotettavasti.
+          </h2>
+          <p class="footer-phone">
+            <a href="tel:+358409643408" class="footer-phone-link"
+              >Puh 040 964 3408</a
+            >
+          </p>
+        </div>
+        <div class="footer-some footer-left footer-col">
+          <h2 class="footer-heading-small">Seuraa Iltametsuria somessa</h2>
+          <ul class="footer-some-list">
+            <li class="footer-some-item">
+              <a
+                href="https://www.instagram.com/iltametsuri/"
+                class="footer-some-link"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li class="footer-some-item">
+              <a
+                href="https://www.facebook.com/Iltametsuri-Oy-106530164137316/"
+                class="footer-some-link"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li class="footer-some-item">
+              <a
+                href="https://twitter.com/iltametsuri"
+                class="footer-some-link"
+                target="_blank"
+                >Twitter</a
+              >
+            </li>
+            <li class="footer-some-item">
+              <a
+                href="https://www.linkedin.com/company/iltametsuri-oy/"
+                class="footer-some-link"
+                target="_blank"
+                >LinkedIn</a
+              >
+            </li>
+            <li class="footer-some-item">
+              <a
+                href="https://www.google.fi/maps/uv?pb=!1s0x468d8de538f7c7e5%3A0xedd989b792fcf807!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipM5-evobqnsd7-dSAZdVLWO2yy7kuJpuWc8tQS3%3Dw240-h160-k-no!5siltametsuri%20-%20Google%20Search!15sCgIgARICGAI&imagekey=!1e10!2sAF1QipPRhMXkQ7kvYrQ3wZZAspzw_ewqejV1Dg6CeYr7&hl=en&sa=X&ved=2ahUKEwjjt4-Wj63tAhWtk4sKHW9QBdIQoiowCnoECBYQAw"
+                target="_blank"
+                class="footer-some-link"
+                >Google</a
+              >
+            </li>
+            <li class="footer-some-item">
+              <a
+                href="https://www.youtube.com/channel/UCl21OA_CVPP6-u5hBx90gNQ"
+                class="footer-some-link"
+                target="_blank"
+                >YouTube</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-area footer-right footer-col">
+          <h2 class="footer-heading-small">Toimialueemme on Uusimaa</h2>
+          <ul class="footer-area-list">
+            <li class="footer-area-item">
+              Uusimaa: Espoo, Helsinki, Vantaa, Porvoo, Sipoo, Kirkkonummi,
+              Siuntio, Lohja, Vihti, Inkoo, Karjaa.
+            </li>
+            <li class="footer-area-item">Päijät-Häme: Lahti, Hollola.</li>
+            <li class="footer-area-item">
+              Koko Etelä-Suomi ja tarvittaessa laajemmallakin alueella.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/scripts/main.js"></script>
+
     <script src="quicklink.js" defer></script>
     <script>
       window.addEventListener("load", () => {
@@ -188,7 +525,7 @@
         style="display: none"
         src="https://www.facebook.com/tr?id=527857696817314&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
+
     <!-- Groweo App -->
     <script
       src="https://engine3.groweo.com/groweoApp/groweoApp.js"
