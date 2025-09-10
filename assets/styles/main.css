@@ -2,8 +2,8 @@
 * Fonts
 */
 @font-face {
-  font-family: 'Futura';
-  src: url('../fonts/futura-book.woff2') format('woff2');
+  font-family: "Futura";
+  src: url("../fonts/futura-book.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 }
 
 @font-face {
-  font-family: 'Futura';
-  src: url('../fonts/futura-medium.woff2') format('woff2');
+  font-family: "Futura";
+  src: url("../fonts/futura-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -20,8 +20,8 @@
 }
 
 @font-face {
-  font-family: 'Futura';
-  src: url('../fonts/futura-extra-black.woff2') format('woff2');
+  font-family: "Futura";
+  src: url("../fonts/futura-extra-black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -32,14 +32,15 @@
 Variables
 */
 :root {
-  --primary: #E88428;
-  --secondary: #868F58;
+  --primary: #e88428;
+  --secondary: #868f58;
 
   --black: #000000;
-  --gray: #D1D0CA;
+  --gray: #d1d0ca;
   --white: #ffffff;
 
-  --font: 'Futura', 'Century Gothic', 'Gill Sans', 'Trebuchet MS', Arial, sans-serif;
+  --font: "Futura", "Century Gothic", "Gill Sans", "Trebuchet MS", Arial,
+    sans-serif;
 
   --size-body: 1.1rem;
   --size-large: 1.25rem;
@@ -97,23 +98,23 @@ body {
   opacity: 1;
 } */
 
-.hero-text>*:first-child,
-.content>*:first-child,
-.services-text>*:first-child,
-.info-text>*:first-child,
-.olavi-text>*:first-child,
-.quote>*:first-child,
-.footer-col>*:first-child {
+.hero-text > *:first-child,
+.content > *:first-child,
+.services-text > *:first-child,
+.info-text > *:first-child,
+.olavi-text > *:first-child,
+.quote > *:first-child,
+.footer-col > *:first-child {
   margin-top: 0;
 }
 
-.hero-text>*:last-child,
-.content>*:last-child,
-.olavi-text>*:last-child,
-.quote>*:last-child,
-.footer-col>*:last-child,
-.services-text>*:last-child,
-.info-text>*:last-child {
+.hero-text > *:last-child,
+.content > *:last-child,
+.olavi-text > *:last-child,
+.quote > *:last-child,
+.footer-col > *:last-child,
+.services-text > *:last-child,
+.info-text > *:last-child {
   margin-bottom: 0;
 }
 
@@ -204,14 +205,9 @@ a:focus {
   color: var(--primary);
 }
 
-.text-black {
-  color: var(--black);
-  text-shadow: none;
-}
-
 .external-link,
 .button.external-link {
-  background-image: url('../images/icon-external-black.svg');
+  background-image: url("../images/icon-external-black.svg");
   background-repeat: no-repeat !important;
   background-position: right center;
   background-size: 0.5em;
@@ -220,11 +216,11 @@ a:focus {
 
 .external-link:hover,
 .external-link:focus {
-  background-image: url('../images/icon-external-primary.svg');
+  background-image: url("../images/icon-external-primary.svg");
 }
 
 .button.external-link {
-  background-image: url('../images/icon-external-white.svg');
+  background-image: url("../images/icon-external-white.svg");
   padding-right: 2.5rem !important;
   background-position: calc(100% - 1em) center !important;
   background-size: 0.75em !important;
@@ -232,7 +228,7 @@ a:focus {
 
 .button.external-link:hover,
 .button.external-link:focus {
-  background-image: url('../images/icon-external-black.svg');
+  background-image: url("../images/icon-external-black.svg");
 }
 
 img,
@@ -521,7 +517,7 @@ svg {
 
 .menu-toggle-inner:before,
 .menu-toggle-inner:after {
-  content: '';
+  content: "";
 }
 
 .menu-toggle-inner:before {
@@ -531,7 +527,8 @@ svg {
 
 .menu-toggle-inner:after {
   bottom: -0.75rem;
-  transition: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: bottom 0.1s ease-in 0.25s,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
 /*
@@ -564,7 +561,8 @@ svg {
 
 .menu-open .menu-toggle-inner:after {
   bottom: 0;
-  transition: bottom 0.1s ease-out, transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+  transition: bottom 0.1s ease-out,
+    transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   transform: rotate(-90deg);
 }
 
@@ -603,7 +601,7 @@ svg {
   margin: 0;
 }
 
-.footer ul li+li {
+.footer ul li + li {
   margin-top: 0.5rem;
 }
 
@@ -657,7 +655,7 @@ svg {
 }
 
 .hero:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -703,7 +701,7 @@ svg {
 * Homepage
 */
 .home .hero {
-  background-image: url('../images/iltametsuri-sahaa-puunrunkoa.webp');
+  background-image: url("../images/iltametsuri-sahaa-puunrunkoa.webp");
 }
 
 .home .hero-text {
@@ -791,7 +789,7 @@ svg {
 * Iltametsuri
 */
 .iltametsuri .hero {
-  background-image: url('../images/iltametsuri-kaataa-puuta.webp');
+  background-image: url("../images/iltametsuri-kaataa-puuta.webp");
   background-position: right center;
 }
 
