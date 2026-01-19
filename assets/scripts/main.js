@@ -7,7 +7,7 @@ function loadLogos() {
       fetch("./assets/images/iltametsuri-logo.svg")
         .then((response) => response.text())
         .then((svgContent) => {
-          logo.innerHTML = `<a href="${window.location.origin}" class="site-logo-link">${svgContent}</a>`;
+          logo.innerHTML = `<a href="${window.location.origin}" class="site-logo-link" aria-label="Iltametsuri Oy - Etusivu">${svgContent}</a>`;
 
           // Add transition delays to letter paths after SVG is loaded
           setTimeout(() => {
