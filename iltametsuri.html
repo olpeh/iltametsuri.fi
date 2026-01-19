@@ -5,6 +5,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="assets/styles/main.css" />
+
+    <!-- DNS prefetch for third-party domains -->
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+    <link rel="dns-prefetch" href="https://engine3.groweo.com" />
+    <link rel="preconnect" href="https://connect.facebook.net" crossorigin />
+    <link rel="preconnect" href="https://engine3.groweo.com" crossorigin />
+
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -431,6 +438,9 @@
             <img
               src="assets/images/iltametsuri-olavi-haapala-2.webp"
               alt="Olavi Haapala"
+              loading="lazy"
+              width="600"
+              height="800"
             />
           </div>
           <div class="olavi-text">
@@ -564,7 +574,7 @@
       </div>
     </footer>
 
-    <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/main.js" defer></script>
 
     <script src="quicklink.js" defer></script>
     <script>
@@ -573,7 +583,7 @@
       });
     </script>
     <!-- Meta Pixel Code -->
-    <script>
+    <script async>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
         n = f.fbq = function () {
@@ -613,6 +623,7 @@
       src="https://engine3.groweo.com/groweoApp/groweoApp.js"
       workspaceId="6762b8189623c2dce23b497b"
       data-cookieconsent="ignore"
+      async
     ></script>
     <!-- End of Groweo App -->
   </body>
