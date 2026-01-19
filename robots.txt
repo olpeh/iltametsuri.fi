@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://iltametsuri.fi/sitemap.xml
+
+# Disallow crawling of any tracking or admin scripts
+Disallow: /assets/scripts/
