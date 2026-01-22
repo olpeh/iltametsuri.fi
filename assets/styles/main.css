@@ -359,11 +359,12 @@ svg {
 }
 
 .gw-smartflow {
-  min-height: 600px;
+  min-height: 800px;
 }
 
 .gw-smartflow iframe {
-  min-height: 600px;
+  min-height: 800px;
+  height: 800px;
 }
 
 @media screen and (max-width: 600px) {
