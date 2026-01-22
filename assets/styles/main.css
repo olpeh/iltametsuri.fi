@@ -358,6 +358,14 @@ svg {
   margin-bottom: var(--spacing-lg);
 }
 
+.gw-smartflow {
+  min-height: 600px;
+}
+
+.gw-smartflow iframe {
+  min-height: 600px;
+}
+
 @media screen and (max-width: 600px) {
   .gw-smartflow {
     width: 100% !important;
