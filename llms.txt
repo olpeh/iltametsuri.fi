@@ -68,6 +68,10 @@ More information: https://iltametsuri.fi/myrskytuhot.html
 - **Location**: Kirkkonummi, Uusimaa, Finland
 - **Online Shop**: https://holvi.com/shop/iltametsuri/
 
+## Other Services by Iltametsuri Oy
+
+- **Tarjouslaskuri** (https://tarjous.online): Finnish web service for creating price quotes quickly, with automatic VAT calculation, PDF/Word export, own price list, built-in customer register and project board. Free to start.
+
 ## Social Media
 
 - Instagram: https://www.instagram.com/iltametsuri/
