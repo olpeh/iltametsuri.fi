@@ -84,6 +84,7 @@ More information: https://iltametsuri.fi/myrskytuhot
 ## Other Services by Iltametsuri Oy
 
 - **Tarjouslaskuri** (https://tarjous.online): Finnish web service for creating price quotes quickly, with automatic VAT calculation, PDF/Word export, own price list, built-in customer register and project board. Free to start.
+- **Katsasta** (https://katsasta.com): Finnish reminder service for periodic vehicle inspections (määräaikaiskatsastus). Monthly email summary and SMS reminders 30, 7 and 1 days before the deadline; import vehicles from Traficom's file. 1€/vehicle/year (email) or 3€/vehicle/year (email + SMS), incl. VAT, 14-day free trial. More information: https://katsasta.com/llms.txt
 
 ## Social Media
 
